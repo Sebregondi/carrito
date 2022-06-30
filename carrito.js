@@ -30,8 +30,6 @@ class Carrito {
         } else {
             this.insertarCarrito (infoProducto);
         }
-        
-        this.insertarCarrito (infoProducto);
     }
 
     insertarCarrito (producto) {
