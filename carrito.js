@@ -26,7 +26,7 @@ class Carrito {
         });
 
         if (productosLS === infoProducto.id){
-            console.log ('Este producto ya está en el carrito');
+            alert ('Este producto ya está en el carrito');
         } else {
             this.insertarCarrito (infoProducto);
         }
