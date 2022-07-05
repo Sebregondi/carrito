@@ -10,11 +10,11 @@ class Carrito {
 
     leerDatosProducto(producto){
         const infoProducto = {
-            imagen : producto.querySelector ('img').src,
-            titulo : producto.querySelector ('h4').textContent,
-            precio : producto.querySelector ('.precio span').textContent,
-            id : producto.querySelector ('a').getAttribute ('data-id'),
-            cantidad : 1
+            imagen: producto.querySelector ('img').src,
+            titulo: producto.querySelector ('h4').textContent,
+            precio: producto.querySelector ('.precio span').textContent,
+            id: producto.querySelector ('a').getAttribute ('data-id'),
+            cantidad: 1
         }
 
         let productosLS;
@@ -25,11 +25,8 @@ class Carrito {
             }
         });
 
-        if (productosLS === infoProducto.id){
-            alert ('Este producto ya está en el carrito');
-        } else {
-            this.insertarCarrito (infoProducto);
-        }
+        // OPERADOR TERNARIO APLICADO
+        productosLS === infoProducto.id ? alert ("Este producto ya está en el carrito") : this.insertarCarrito (infoProducto);
     }
 
     insertarCarrito (producto) {
@@ -74,14 +71,11 @@ class Carrito {
         localStorage.setItem ('productos', JSON.stringify(productos));
     }
 
+    // OPERADOR TERNARIO APLICADO
     obtenerProductosStorage(){
         let productoLS;
 
-        if (localStorage.getItem('productos') === null){
-            productoLS = [];
-        } else {
-            productoLS = JSON.parse (localStorage.getItem ('productos'));
-        }
+        localStorage.getItem ('productos') === null ? productoLS = [] : productoLS = JSON.parse (localStorage.getItem ('productos'));
         return productoLS;
     }
 
