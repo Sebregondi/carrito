@@ -29,5 +29,15 @@ function cargarEventos(){
 
     vaciarCarritoBtn.addEventListener ('click', (e) => {carro.vaciarCarrito (e)});
 
+    vaciarCarritoBtn.addEventListener ('click', (e) => 
+        Swal.fire ({
+            title: "Eliminado",
+            text: "Vaciaste el carrito",
+            icon: "error",
+            confirmButtonText: "OK"
+        })
+    );
+
+
     document.addEventListener('DOMContentLoaded', carro.leerLocalStorage());
 }
