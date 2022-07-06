@@ -9,7 +9,23 @@ cargarEventos();
 function cargarEventos(){
     productos.addEventListener ('click', (e) => {carro.comprarProducto(e)});
 
+    productos.addEventListener ('click', (e) => {
+        Toastify({
+            text: "Item agregado",
+            duration: 3000,
+            position: "center"
+            }).showToast()
+        })
+
     carrito.addEventListener ('click', (e) => {carro.eliminarProducto(e)});
+
+    carrito.addEventListener ('click', (e) => {
+        Toastify({
+            text: "Item eliminado",
+            duration: 3000,
+            position: "center"
+            }).showToast()
+        })
 
     vaciarCarritoBtn.addEventListener ('click', (e) => {carro.vaciarCarrito (e)});
 
