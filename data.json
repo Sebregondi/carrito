@@ -1,0 +1,8 @@
+[
+    {"nombre": "El aleph", "precio": 3649, "genero": "Cuento", "id": 1},
+    {"nombre": "Ficciones", "precio": 3649, "genero": "Cuento", "id": 2},
+    {"nombre": "Inquisiciones/Otras inquisiciones", "precio": 2049, "genero": "Ensayo", "id": 3},
+    {"nombre": "Historia de la eternidad", "precio": 2049, "genero": "Cuento", "id": 4},
+    {"nombre": "La rosa profunda", "precio": 2049, "genero": "Poesía", "id": 5},
+    {"nombre": "La cifra", "precio": 2049, "genero": "Poesía", "id": 6}
+]
