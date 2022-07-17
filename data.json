@@ -1,8 +1,9 @@
 [
-    {"nombre": "El aleph", "precio": 3649, "genero": "Cuento", "id": 1},
-    {"nombre": "Ficciones", "precio": 3649, "genero": "Cuento", "id": 2},
-    {"nombre": "Inquisiciones/Otras inquisiciones", "precio": 2049, "genero": "Ensayo", "id": 3},
-    {"nombre": "Historia de la eternidad", "precio": 2049, "genero": "Cuento", "id": 4},
-    {"nombre": "La rosa profunda", "precio": 2049, "genero": "Poesía", "id": 5},
-    {"nombre": "La cifra", "precio": 2049, "genero": "Poesía", "id": 6}
+    {"nombre": "El aleph", "precio": 3649, "genero": "Cuento", "img": "/img/ElAleph.jpg",
+     "id": 1},
+    {"nombre": "Ficciones", "precio": 3649, "genero": "Cuento", "img": "/img/Ficciones.jpg", "id": 2},
+    {"nombre": "Inquisiciones/Otras inquisiciones", "precio": 2049, "genero": "Ensayo", "img": "/img/Inquisiciones.jpg", "id": 3},
+    {"nombre": "Historia de la eternidad", "precio": 2049, "genero": "Cuento", "img": "/img/HistoriaEternidad.jpg", "id": 4},
+    {"nombre": "La rosa profunda", "precio": 2049, "genero": "Poesía", "img": "/img/RosaProfunda.jpg", "id": 5},
+    {"nombre": "La cifra", "precio": 2049, "genero": "Poesía", "img": "/img/LaCifra.jpg", "id": 6}
 ]
